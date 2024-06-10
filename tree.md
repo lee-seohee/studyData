@@ -22,3 +22,26 @@ BTreeNode* MakeExpTree(char* exp, int len){
     }
     return Peek(&stack);
 }```
+
+### Inorder in Threaded Binary Tree
+
+```c
+BTreeNode* leftMost(BTreeNode* node){
+    if(node == NULL) return NULL;
+    while(node -> left_chile != NULL)
+        node = node -> left_child;
+    
+    return node;
+}
+
+void inorder(BTreeNode* node){
+    BTreeNode* cur = leftmost(node);
+    while(cur != NULL){
+        printf("%d", cur->item);
+    if(cur -> isTheaded)
+        cur = cur -> right_child;
+    else
+        cur = leftmost(cur -> right_child);
+    }
+}
+```
