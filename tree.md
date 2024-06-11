@@ -38,10 +38,10 @@ void inorder(BTreeNode* node){
     BTreeNode* cur = leftmost(node);
     while(cur != NULL){
         printf("%d", cur->item);
-    if(cur -> isTheaded)
+    if(cur -> isTheaded) //스레드면 right_child로 이동
         cur = cur -> right_child;
     else
-        cur = leftmost(cur -> right_child);
+        cur = leftmost(cur -> right_child); //그렇지 않으면 right_child의 가장 왼쪽으로 이동
     }
 }
 ```
