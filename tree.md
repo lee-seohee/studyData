@@ -23,7 +23,7 @@ BTreeNode* MakeExpTree(char* exp, int len){
     return Peek(&stack);
 }```
 
-### Inorder in Threaded Binary Tree
+### Inorder in Threaded Binary Tree //Inorder == LCR
 
 ```c
 BTreeNode* leftMost(BTreeNode* node){
