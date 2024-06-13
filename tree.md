@@ -2,7 +2,7 @@
 
 ```c
 BTreeNode* MakeExpTree(char* exp, int len){
-    Stack stack;
+    Stack stack; //stack은 FILO
     BTreeNode * node, *right_node, *left_node;
 
     InitStack(&stack);
