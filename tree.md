@@ -34,7 +34,7 @@ BTreeNode* leftMost(BTreeNode* node){
     return node;
 }
 
-void inorder(BTreeNode* node){
+void InOrder(BTreeNode* node){
     BTreeNode* cur = leftmost(node);
     while(cur != NULL){
         printf("%d", cur->item);
