@@ -26,7 +26,7 @@ BTreeNode* MakeExpTree(char* exp, int len){
 ### Inorder in Threaded Binary Tree //Inorder == LCR
 
 ```c
-BTreeNode* leftMost(BTreeNode* node){
+BTreeNode* leftMost(BTreeNode* node){ //가장 왼쪽으로 가는 코드
     if(node == NULL) return NULL;
     while(node -> left_chile != NULL)
         node = node -> left_child;
